@@ -1,0 +1,33 @@
+{
+  "ARTIFACTS": {
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ASSET_CANDIDATE_DRAFT.json": {
+      "sha256": "245ab993806b38e333d2ecbe34263cb33b84db74de10f9178c1e4ff101e91cbd"
+    },
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/CARRY_FORWARD_BOUNDARY_DRAFT.json": {
+      "sha256": "3f0b41d852f0fdae832923bf0566cccc6de91314bb35d2c72b41524753152e45"
+    },
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/LINEAGE_06_IDENTITY_DRAFT.json": {
+      "sha256": "974fc02403e50392d99baf1f3963ea3c904459d4af39a5a281f75571a62451ac"
+    }
+  },
+  "AUTHORIZATION": {
+    "bias": false,
+    "calendar": false,
+    "dataset": false,
+    "definition_manifest": false,
+    "engine": false,
+    "family_contract": false,
+    "layer_2a": false,
+    "layer_2b": false,
+    "production": false,
+    "provider": false
+  },
+  "BASE_MAIN_HEAD": "fdf0e31b5b6a769338c0f8d7f5936edd61f7ca49",
+  "BRANCH": "research/lineage-06-bootstrap-20261004",
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "NOTE": "The prior manifest remains immutable as historical evidence of the detected mismatch and is non-authoritative.",
+  "REMOTE": "https://github.com/ololademoses10/Gpt-Whop-Cooking.git",
+  "REPLACEMENT_FOR": "ACTION_00B_SHA256_MANIFEST.json",
+  "SPEC_ID": "BULL_RESEARCH_LINEAGE_06_ACTION_00B_SHA256_MANIFEST_V2",
+  "STATUS": "CORRECTED_AUTHORITATIVE_BOOTSTRAP_MANIFEST"
+}
