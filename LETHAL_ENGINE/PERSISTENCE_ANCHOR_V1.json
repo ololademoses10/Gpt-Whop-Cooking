@@ -1,0 +1,54 @@
+{
+  "SPEC_ID": "LETHAL_PERSISTENCE_ANCHOR_V1",
+  "STATUS": "DURABLE_ANCHOR_ESTABLISHED",
+  "REPOSITORY": "ololademoses10/Gpt-Whop-Cooking",
+  "DEFAULT_BRANCH": "main",
+  "PURPOSE": "Durable external persistence anchor for LETHAL ENGINE / Sonic Shift research governance.",
+  "CREATED_DATE_UTC": "2026-10-04",
+  "GOVERNANCE": {
+    "workflow": "WRITE -> SELF-AUDIT -> INDEPENDENT REHASH -> SEAL -> CHECKPOINT -> HARD STOP -> HUMAN REVIEW -> NEXT GATE",
+    "no_reconstruction_from_chat": true,
+    "no_overwrite_of_sealed_artifacts": true,
+    "every_sealed_artifact_requires_sha256": true,
+    "every_major_gate_requires_checkpoint": true,
+    "downstream_must_verify_upstream_hashes": true,
+    "missing_required_information_requires_hard_stop": true,
+    "dataset_acquisition_requires_raw_bytes_raw_hash_canonical_hash_manifest_provenance_and_recovery_copy": true
+  },
+  "FORBIDDEN_EPHEMERAL_PATHS": [
+    "/mnt/data",
+    "/root/apps",
+    "/root/research",
+    "/tmp",
+    "/var/tmp"
+  ],
+  "LOST_LINEAGE_STATUS": {
+    "BULL_RESEARCH_LINEAGE_01": "CLOSED_BYTES_LOST",
+    "BULL_RESEARCH_LINEAGE_02": "CLOSED_BYTES_LOST",
+    "BULL_RESEARCH_LINEAGE_03": "CLOSED_BYTES_UNAVAILABLE",
+    "BULL_RESEARCH_LINEAGE_04": "CLOSED_BYTES_UNAVAILABLE",
+    "BULL_RESEARCH_LINEAGE_05": "CLOSED_BYTES_UNAVAILABLE"
+  },
+  "HISTORICAL_LINEAGE_05_IDENTIFIERS_ONLY": {
+    "protocol_sha256": "76792b14b379da6ca91ce02c7c6ece50d15dc28398759bfdddf714a616cd7f89",
+    "action_05_preflight_sha256": "641bb69407a5706f8984db27f2769b51e3850f4b3f1873abe5f4c197584c5479",
+    "action_06_status": "NOT_EXECUTED",
+    "warning": "These identifiers do not prove current local bytes exist and must never be used to reconstruct Lineage 05."
+  },
+  "CURRENT_STATE": {
+    "lineage_05_recovered": false,
+    "action_06_rerun": false,
+    "new_lineage_started": false,
+    "provider_authorized": false,
+    "dataset_acquired": false,
+    "calendar_materialized": false,
+    "research_engine_started": false,
+    "family_contract_started": false,
+    "definition_manifest_started": false,
+    "layer_2a_scan_started": false,
+    "bias_touched": false,
+    "production_touched": false
+  },
+  "NEXT_ALLOWED_GATE": "NEW INDEPENDENT LINEAGE PREFLIGHT AFTER DURABLE ANCHOR VERIFICATION",
+  "SCOPE_NOTE": "This repository anchor does not constitute recovery of any lost lineage and does not authorize data acquisition or research execution."
+}
