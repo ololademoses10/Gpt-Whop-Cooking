@@ -1,0 +1,27 @@
+{
+  "AUTHORIZED_FOR_DATA": false,
+  "CANDIDATE_ASSETS": [
+    "XAUUSD",
+    "XAGUSD",
+    "EURUSD",
+    "EURJPY",
+    "GBPUSD",
+    "US30",
+    "USDJPY",
+    "AUDUSD",
+    "NAS100"
+  ],
+  "CANDIDATE_INTERVALS": [
+    "1H",
+    "1D",
+    "1W",
+    "1MO"
+  ],
+  "CALENDAR": null,
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "PROVIDER": null,
+  "SOURCE_SYMBOL_MAP": {},
+  "SPEC_ID": "BULL_RESEARCH_LINEAGE_06_ASSET_CANDIDATE_DRAFT_V1",
+  "STATUS": "CANDIDATE_ONLY",
+  "RULE": "Candidate assets and intervals are not authoritative. No data may be acquired until a later governed source/dataset authority action explicitly seals them."
+}
