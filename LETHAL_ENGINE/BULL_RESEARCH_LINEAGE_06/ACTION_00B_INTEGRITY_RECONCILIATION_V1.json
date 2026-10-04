@@ -1,0 +1,38 @@
+{
+  "BRANCH": "research/lineage-06-bootstrap-20261004",
+  "DATE_UTC": "2026-10-04",
+  "DECISION": "Proceed only from independently verified core bootstrap artifacts; retain prior correction record/checkpoint as historical audit evidence, not as authoritative sealed bytes.",
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "NEXT_GATE": "ACTION_01_REVIEW",
+  "NON_AUTHORITATIVE_HISTORICAL_CORRECTION_RECORDS": {
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_00B_CORRECTION_CHECKPOINT.json": {
+      "independently_observed_raw_sha256": "a35e26015fcb684988c08704da63ce2b724f85d8a760c7e7effa6f762d4091e1",
+      "previously_claimed_sha256": "f59445460846bda6717ade2e6d73e93b15755ad37e0e7ae3cd220cb691a6a606",
+      "status": "NON_AUTHORITATIVE_HASH_METADATA_MISMATCH"
+    },
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_00B_MANIFEST_INTEGRITY_EXCEPTION_V1.json": {
+      "independently_observed_raw_sha256": "6806e8a169b11e643849a69d313da309ff91d345efa19abc398014151a93e5e9",
+      "previously_claimed_sha256": "f92dfca10a667e2e646556d8115620bca60af11d9bdd2e30ba7dcf6bfdce1262",
+      "status": "NON_AUTHORITATIVE_HASH_METADATA_MISMATCH"
+    }
+  },
+  "REMOTE": "https://github.com/ololademoses10/Gpt-Whop-Cooking.git",
+  "RULES": {
+    "bias_touched": false,
+    "do_not_overwrite_prior_records": true,
+    "do_not_promote_non_authoritative_records": true,
+    "do_not_reconstruct_lost_lineages": true,
+    "methodology_may_be_reviewed": true,
+    "no_data_provider_calendar_engine_scan_authorized": true,
+    "production_touched": false
+  },
+  "SPEC_ID": "BULL_RESEARCH_LINEAGE_06_ACTION_00B_INTEGRITY_RECONCILIATION_V1",
+  "STATUS": "BOOTSTRAP_CORE_VERIFIED_CORRECTION_RECORDS_NON_AUTHORITATIVE",
+  "VERIFIED_CORE_ARTIFACTS": {
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ASSET_CANDIDATE_DRAFT.json": "245ab993806b38e333d2ecbe34263cb33b84db74de10f9178c1e4ff101e91cbd",
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_00B_SHA256_MANIFEST_V2.json": "9d4afed00d525a24b1e54709fa099ecc313dc4e862ae24e591d98df351deb6dc",
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/CARRY_FORWARD_BOUNDARY_DRAFT.json": "3f0b41d852f0fdae832923bf0566cccc6de91314bb35d2c72b41524753152e45",
+    "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/LINEAGE_06_IDENTITY_DRAFT.json": "974fc02403e50392d99baf1f3963ea3c904459d4af39a5a281f75571a62451ac",
+    "LETHAL_ENGINE/PERSISTENCE_ANCHOR_V1.json": "1a120f21a5411145f9825736ca5118255f1a5f8efe77a4e6fdc99cfecfbf7fce"
+  }
+}
