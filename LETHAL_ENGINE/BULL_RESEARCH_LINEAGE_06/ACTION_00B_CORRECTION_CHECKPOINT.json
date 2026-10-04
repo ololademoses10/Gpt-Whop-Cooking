@@ -1,0 +1,52 @@
+{
+  "AUTHORIZATION": {
+    "bias": false,
+    "calendar": false,
+    "dataset": false,
+    "definition_manifest": false,
+    "engine": false,
+    "family_contract": false,
+    "layer_2a": false,
+    "layer_2b": false,
+    "production": false,
+    "provider": false
+  },
+  "BRANCH": "research/lineage-06-bootstrap-20261004",
+  "CORRECTED_MANIFEST": {
+    "commit": "60bf4f2b1bf628416a442148f81f94896cdbfec3",
+    "path": "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_00B_SHA256_MANIFEST_V2.json",
+    "sha256": "9d4afed00d525a24b1e54709fa099ecc313dc4e862ae24e591d98df351deb6dc"
+  },
+  "CORRECTION_RECORD": {
+    "commit": "b11a79eeb5c280f4c6ff8e0de3f34124fea95136",
+    "path": "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_00B_MANIFEST_INTEGRITY_EXCEPTION_V1.json",
+    "sha256": "f92dfca10a667e2e646556d8115620bca60af11d9bdd2e30ba7dcf6bfdce1262"
+  },
+  "DATE_UTC": "2026-10-04",
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "NEXT_GATE": "ACTION_00B_CORRECTION_VERIFICATION_THEN_ACTION_01_METHODOLOGY_DRAFT",
+  "NOT_STARTED": {
+    "action_06_rerun": true,
+    "bias": true,
+    "calendar_materialization": true,
+    "dataset_acquisition": true,
+    "definition_manifest": true,
+    "engine": true,
+    "family_contract": true,
+    "layer_2a": true,
+    "layer_2b": true,
+    "lineage_05_recovery": true,
+    "production": true,
+    "provider_authorization": true,
+    "research_engine": true
+  },
+  "ORIGINAL_MANIFEST_STATUS": "NON_AUTHORITATIVE_AFTER_INTEGRITY_MISMATCH",
+  "REMOTE": "https://github.com/ololademoses10/Gpt-Whop-Cooking.git",
+  "SEAL_CHAIN": {
+    "corrected_manifest_commit": "60bf4f2b1bf628416a442148f81f94896cdbfec3",
+    "correction_commit": "b11a79eeb5c280f4c6ff8e0de3f34124fea95136",
+    "prior_bootstrap_checkpoint": "d960d8fda5f12615dd14771c26389571bbae13b3"
+  },
+  "SPEC_ID": "BULL_RESEARCH_LINEAGE_06_ACTION_00B_CORRECTION_CHECKPOINT_V1",
+  "STATUS": "BOOTSTRAP_CORRECTION_SEALED"
+}
