@@ -1,0 +1,36 @@
+{
+  "AUTHORIZATION": {
+    "bias": false,
+    "calendar": false,
+    "dataset": false,
+    "definition_manifest": false,
+    "engine": false,
+    "family_contract": false,
+    "layer_2a": false,
+    "layer_2b": false,
+    "production": false,
+    "provider": false
+  },
+  "CREATED_UTC_DATE": "2026-10-04",
+  "DURABLE_ANCHOR": {
+    "anchor": "LETHAL_ENGINE/PERSISTENCE_ANCHOR_V1.json",
+    "anchor_sha256": "1a120f21a5411145f9825736ca5118255f1a5f8efe77a4e6fdc99cfecfbf7fce",
+    "branch": "main",
+    "repository": "ololademoses10/Gpt-Whop-Cooking"
+  },
+  "INDEPENDENT_LINEAGE": true,
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "NEXT_GATE": "ACTION_01_METHODOLOGY_DRAFT",
+  "PARENT_LINEAGE": null,
+  "RESEARCH_SCOPE": {
+    "broker_connectivity": false,
+    "deterministic_rules": true,
+    "historical_completed_bar_research": true,
+    "live_execution": false,
+    "ml_or_ai_decision_making": false,
+    "mt5_connectivity": false,
+    "profit_guarantee": false
+  },
+  "SPEC_ID": "BULL_RESEARCH_LINEAGE_06_IDENTITY_DRAFT_V1",
+  "STATUS": "PREPARATION_ONLY"
+}
