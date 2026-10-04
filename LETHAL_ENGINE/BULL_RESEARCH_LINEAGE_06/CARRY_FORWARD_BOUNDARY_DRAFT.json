@@ -1,0 +1,36 @@
+{
+  "ALLOWED_CARRY_FORWARD": [
+    "deterministic research governance",
+    "strict completed-bar discipline",
+    "strict UTC ordering",
+    "no-lookahead discipline",
+    "missing required inputs remain UNEVALUABLE",
+    "cross-asset isolation",
+    "overlap reporting",
+    "explicit pre-outcome versus outcome-time confirmation distinction",
+    "WRITE -> SELF-AUDIT -> INDEPENDENT REHASH -> SEAL -> CHECKPOINT -> HARD STOP",
+    "research must not mutate /bias",
+    "research must not mutate production"
+  ],
+  "FORBIDDEN_CARRY_FORWARD": [
+    "Lineage 01 bytes",
+    "Lineage 02 bytes",
+    "Lineage 03 bytes",
+    "Lineage 04 bytes",
+    "Lineage 05 bytes",
+    "Lineage 05 provider authorization",
+    "Lineage 05 dataset",
+    "Lineage 05 calendar",
+    "Lineage 05 engine",
+    "Lineage 05 family contract",
+    "Lineage 05 definition manifest",
+    "Lineage 05 scan output",
+    "Lineage 05 outcome tables",
+    "reconstruction from historical hashes",
+    "reconstruction from chat memory"
+  ],
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "RULE": "Specific methodology/technical contracts required by Lineage 06 must be freshly authored, reviewed, sealed, hashed, checkpointed, and durably persisted.",
+  "SPEC_ID": "BULL_RESEARCH_LINEAGE_06_CARRY_FORWARD_BOUNDARY_DRAFT_V1",
+  "STATUS": "DRAFT_ONLY"
+}
