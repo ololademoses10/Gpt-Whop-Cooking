@@ -1,0 +1,31 @@
+{
+  "BASE_MAIN_HEAD": "fdf0e31b5b6a769338c0f8d7f5936edd61f7ca49",
+  "BRANCH": "research/lineage-06-bootstrap-20261004",
+  "DURABLE_COMMITS": {
+    "assets": "60ce44a77a1c55ec3a0851f243b32de0d1139931",
+    "boundary": "557f4653f164a2db5b949181045de23e350aea35",
+    "identity": "1860fdffbfcca1d0e9018d62b18d114fa053783e",
+    "manifest": "fdcb5ec9410d803b16b08b31e87e5dda8db0a3ca"
+  },
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "MANIFEST_SHA256": "3949a537e1b36c342e10b4ce6b131175bc92dab4b46fd8f3193dd03f8e1e5342",
+  "NEXT_GATE": "ACTION_01_METHODOLOGY_DRAFT",
+  "NOT_STARTED": {
+    "action_06_rerun": true,
+    "bias": true,
+    "calendar_materialization": true,
+    "dataset_acquisition": true,
+    "definition_manifest": true,
+    "engine": true,
+    "family_contract": true,
+    "layer_2a": true,
+    "layer_2b": true,
+    "lineage_05_recovery": true,
+    "production": true,
+    "provider_authorization": true,
+    "research_engine": true
+  },
+  "REMOTE": "https://github.com/ololademoses10/Gpt-Whop-Cooking.git",
+  "SPEC_ID": "BULL_RESEARCH_LINEAGE_06_ACTION_00B_CHECKPOINT_V1",
+  "STATUS": "BOOTSTRAP_SEALED"
+}
