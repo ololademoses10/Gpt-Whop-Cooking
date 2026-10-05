@@ -1,0 +1,152 @@
+{
+  "SPEC_ID": "BULL_RESEARCH_LINEAGE_06_ACTION_01_METHODOLOGY_DRAFT_V4",
+  "COMPANY": "Sonic Shift",
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "STATUS": "DRAFT_ONLY",
+  "PREDECESSOR": {
+    "V3_STATUS": "CLOSED_BYTES_UNAVAILABLE",
+    "RECOVERED": false,
+    "RECONSTRUCTED": false
+  },
+  "PURPOSE": "Fresh deterministic historical research methodology for recurring bullish location and event relationships.",
+  "OBSERVATION_UNIT": {
+    "tuple": "(asset_id, definition_id, T)",
+    "T": "completed valid UTC 1H bar",
+    "primary_timeframe": "1H"
+  },
+  "ELIGIBILITY": {
+    "required": [
+      "completed valid UTC 1H bar",
+      "later-sealed expected calendar membership",
+      "authorized research-window membership",
+      "unique timestamp",
+      "valid OHLC",
+      "required first-stage inputs present"
+    ],
+    "missing_required_input": "UNEVALUABLE",
+    "duplicate_timestamp": "INVALID",
+    "invalid_timestamp": "INVALID",
+    "outside_calendar": "INVALID",
+    "outside_window": "INVALID",
+    "timestamp_compression": false,
+    "timestamp_reordering": false,
+    "timestamp_snapping": false,
+    "timestamp_substitution": false
+  },
+  "FIRST_STAGE": {
+    "definition": "Research-defined location predicate",
+    "exact_formula": "UNSEALED",
+    "thresholds": "UNSEALED",
+    "lookbacks": "UNSEALED",
+    "activation_rules": "UNSEALED"
+  },
+  "EVENT_FRAME": {
+    "candidate_events": [
+      "BULLISH_1H_STRUCTURE_CONFIRMATION",
+      "DOWNSIDE_LIQUIDITY_SWEEP",
+      "BULLISH_FVG",
+      "BULLISH_DISPLACEMENT",
+      "BULLISH_ORDER_BLOCK",
+      "RECLAIM"
+    ],
+    "event_formulas": "UNSEALED",
+    "event_precedence": "UNSEALED"
+  },
+  "TEMPORAL_PROTOCOL": {
+    "completed_bars_only": true,
+    "strict_UTC_ordering": true,
+    "no_lookahead": true,
+    "confirmation_search": "first qualifying remaining-stage event strictly after T",
+    "confirmation_window": "12 consecutive expected UTC 1H timestamps",
+    "missing_expected_timestamp": "breaks completeness; never compress",
+    "timestamp_substitution": false,
+    "intrabar_ordering": "not inferred unless explicitly sealed later"
+  },
+  "OUTCOME": {
+    "To": "12th consecutive expected UTC 1H timestamp after T",
+    "positive": "close(To) > close(T)",
+    "negative": "close(To) <= close(T)",
+    "equality": "NEGATIVE",
+    "incomplete_horizon": "CENSORED",
+    "censored_rule": "CENSORED is never converted into POSITIVE, NEGATIVE, CONTROL, or NO_CONFIRMATION"
+  },
+  "CONFIRMATION": {
+    "pre_To": "confirmation timestamp strictly before To",
+    "at_To": "confirmation timestamp exactly equal to To",
+    "at_To_tag": "CONFIRMATION_AT_OUTCOME",
+    "at_To_pre_outcome_alertable": false,
+    "none": "No qualifying downstream event in valid horizon"
+  },
+  "TREATMENT_CONTROL": {
+    "treatment": "Eligible observation whose first-stage predicate is TRUE at T",
+    "control": "Eligible observation whose first-stage predicate is FALSE at T",
+    "unevaluable": "Missing or unevaluable first-stage input; never relabel as CONTROL",
+    "balancing": false,
+    "matching": false,
+    "sampling": false
+  },
+  "OVERLAPS": {
+    "overlapping_observations_allowed": true,
+    "overlap_reporting_required": true,
+    "cross_asset_isolation": true,
+    "cross_definition_isolation": true,
+    "silent_deduplication": false,
+    "silent_merging": false
+  },
+  "HTF_CONTEXT": {
+    "candidates": ["1D", "1W", "1MO"],
+    "status": "UNAUTHORIZED_UNTIL_EXPLICITLY_DEFINED"
+  },
+  "REPORTING": {
+    "required": [
+      "eligible_count",
+      "treatment_count",
+      "control_count",
+      "unevaluable_count",
+      "invalid_count",
+      "censored_count",
+      "confirmation_count",
+      "pre_To_confirmation_count",
+      "CONFIRMATION_AT_OUTCOME_count",
+      "no_confirmation_count",
+      "positive_count",
+      "negative_count",
+      "overlap_count",
+      "calendar_completeness",
+      "timestamp_diagnostics",
+      "per_asset_results",
+      "per_definition_results"
+    ]
+  },
+  "EXACT_RULES_NOT_YET_SEALED": [
+    "location formula",
+    "event formulas",
+    "lookbacks",
+    "thresholds",
+    "activation rules",
+    "event precedence",
+    "symbol mapping",
+    "provider",
+    "calendar construction",
+    "research window"
+  ],
+  "AUTHORIZATION": {
+    "provider": false,
+    "calendar": false,
+    "dataset": false,
+    "definition_manifest": false,
+    "engine": false,
+    "family_contract": false,
+    "layer_2a": false,
+    "layer_2b": false,
+    "bias": false,
+    "production": false
+  },
+  "REVIEW_REQUIREMENTS": {
+    "human_review": true,
+    "semantic_review": true,
+    "material_change_requires_new_version": true,
+    "separate_protocol_seal": true
+  },
+  "NEXT_GATE": "ACTION_01_REVIEW"
+}
