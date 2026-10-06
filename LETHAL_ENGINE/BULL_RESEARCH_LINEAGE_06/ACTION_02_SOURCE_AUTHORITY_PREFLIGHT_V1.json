@@ -1,0 +1,63 @@
+{
+  "REPORT_ID": "BULL_RESEARCH_LINEAGE_06_ACTION_02_SOURCE_AUTHORITY_PREFLIGHT_V1",
+  "COMPANY": "Sonic Shift",
+  "LINEAGE_ID": "BULL_RESEARCH_LINEAGE_06",
+  "STATUS": "AUTHORITY_CANDIDATE_IDENTIFIED_NOT_SEALED",
+  "BRANCH": "research/lineage-06-bootstrap-20261004",
+  "DURABLE_HEAD_VERIFIED": "2c0e7f5db579c96cbbafd2e3bba286d896339dfa",
+  "DATA_ACQUIRED": false,
+  "DATASET_AUTHORIZED": false,
+  "CALENDAR_AUTHORIZED": false,
+  "ENGINE_STARTED": false,
+  "DEFINITIONS_STARTED": false,
+  "LAYER_2A_STARTED": false,
+  "LAYER_2B_STARTED": false,
+  "PRODUCTION_TOUCHED": false,
+  "V3_RECONSTRUCTED": false,
+  "CANDIDATE_ASSETS": [
+    "XAUUSD",
+    "XAGUSD",
+    "EURUSD",
+    "EURJPY",
+    "GBPUSD",
+    "US30",
+    "USDJPY",
+    "AUDUSD",
+    "NAS100"
+  ],
+  "CANDIDATE_INTERVALS": [
+    "1H",
+    "1D",
+    "1W",
+    "1MO"
+  ],
+  "LEADING_PROVIDER_CANDIDATE": "Massive",
+  "SECOND_PROVIDER_CANDIDATE": "Twelve Data",
+  "MASSIVE_EVIDENCE": {
+    "forex_history": "Custom historical OHLC available; documentation states history back to 2009-09-25 on the cited Forex aggregate page.",
+    "forex_time_basis": "Forex custom aggregate documentation states ET timestamps.",
+    "precious_metals": "Official Massive knowledge base documents spot gold as C:XAUUSD and spot silver as C:XAGUSD.",
+    "indices": "Official Massive documentation provides historical index OHLC and states NDX/Nasdaq Composite are covered; DJI is available but requires a paid indices tier.",
+    "index_time_basis": "Official Massive indices aggregate documentation states ET.",
+    "index_sources": "Official Massive source documentation states indices originate from Nasdaq, Cboe Global Indices, and CME Group and expose source_feed.",
+    "missing_bar_semantics": "Official aggregate documentation states no bar is produced when no qualifying update/trade occurs, preserving empty intervals.",
+    "futures": "Official futures docs support historical OHLC at resolutions from seconds through week/month and explicitly document session timing.",
+    "authority_gap": "Exact authoritative symbol mapping and entitlement/plan coverage for every research asset still require explicit verification before seal."
+  },
+  "TWELVE_DATA_EVIDENCE": {
+    "forex_history": "Official Twelve Data documentation states 20+ years of forex history depending on pair and supports 1h, 1day, 1week and 1month intervals.",
+    "precious_metals": "Official Twelve Data forex page explicitly lists Gold Spot XAU and Silver Spot XAG.",
+    "timezone": "Official API documentation allows UTC for intraday output, but daily/weekly/monthly timezone parameter is ignored and returned in exchange local time.",
+    "timezone_documentation_conflict": "Official support material states a default Forex timezone of Australia/Sydney, while API documentation describes forex timestamps as UTC; controlled timezone handling can mitigate this, but the discrepancy must be documented.",
+    "authority_gap": "Exact index instrument mappings and uniform cross-asset calendar semantics remain unverified."
+  },
+  "DECISION": {
+    "Massive": "LEADING_CANDIDATE_PENDING_SYMBOL_AND_ACCESS_VERIFICATION",
+    "Twelve_Data": "CONDITIONAL_CANDIDATE",
+    "single_provider_preferred": true,
+    "silent_proxy_forbidden": true,
+    "silent_symbol_substitution_forbidden": true,
+    "data_download_performed": false
+  },
+  "NEXT_GATE": "ACTION_02_SYMBOL_AND_ACCESS_VERIFICATION"
+}
