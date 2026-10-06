@@ -1,0 +1,58 @@
+{
+  "artifact_type": "ACTION_02_REMEDIATION_CONTRACT",
+  "contract_version": "V2",
+  "generation_status": "NEW_CONTRACT_FROM_DURABLE_INPUTS",
+  "historical_v1_recovered": false,
+  "historical_v1_sha256": "ca34e45afabcc64262193509019dbe10618b40ee320bcc625cde77aa25d7d8eb",
+  "historical_r2_sha256": "559c619e703fc9728fa5a0fadb269d1c808ced9468aa21c1ae5d3091ea4798bb",
+  "lineage_id": "BULL_RESEARCH_LINEAGE_06",
+  "repository": "ololademoses10/Gpt-Whop-Cooking",
+  "parent_preflight_path": "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_02_SOURCE_AUTHORITY_PREFLIGHT_V1.json",
+  "parent_preflight_sha256": "a2898ad3d6537a19140cf11a55be160203782f51999e781bfa246f4e06b4d5e9",
+  "purpose": "Fresh Action 02 source-authority remediation contract derived only from durable Lineage 06 inputs. It is not recovery of the vanished V1/R2 artifact.",
+  "allowed_statuses": ["VERIFIED","UNVERIFIED","BLOCKED","UNKNOWN","NOT_APPLICABLE"],
+  "required_fields": [
+    "artifact_type","contract_version","lineage_id","parent_preflight_sha256",
+    "generation_method","source_authority_status","provider_status",
+    "symbol_mapping_status","entitlement_status","completed_bar_capability_status",
+    "timestamp_semantics_status","raw_byte_capability_status",
+    "provenance_status","reproducibility_status","unresolved_blockers",
+    "authorized_for_data","authorized_for_research","authorized_for_production","hard_stop"
+  ],
+  "hard_rules": [
+    "Only durable Lineage 06 artifacts may be inputs.",
+    "Chat history, stdout, /tmp, memory, lost bytes, and historical hashes are not authoritative input bytes.",
+    "No provider may be declared authoritative by this contract.",
+    "Candidate provider evidence remains candidate evidence until a later explicit verification gate.",
+    "No OHLC or market data may be acquired under this contract.",
+    "No calendar may be materialized under this contract.",
+    "No engine, definitions, Layer 2A, Layer 2B, /bias, or production work may begin under this contract.",
+    "Unknown, unverified, blocked, or missing required information cannot become VERIFIED by assumption.",
+    "authorized_for_data must remain false.",
+    "authorized_for_research must remain false.",
+    "authorized_for_production must remain false.",
+    "Historical Action 02 V1/R2 bytes are not recovered by this artifact.",
+    "Any missing required information causes HARD STOP."
+  ],
+  "durable_upstream_inputs": [
+    {"path":"LETHAL_ENGINE/PERSISTENCE_ANCHOR_V1.json","sha256":"1a120f21a5411145f9825736ca5118255f1a5f8efe77a4e6fdc99cfecfbf7fce"},
+    {"path":"LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/LINEAGE_06_IDENTITY_DRAFT.json","sha256":"974fc02403e50392d99baf1f3963ea3c904459d4af39a5a281f75571a62451ac"},
+    {"path":"LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/CARRY_FORWARD_BOUNDARY_DRAFT.json","sha256":"3f0b41d852f0fdae832923bf0566cccc6de91314bb35d2c72b41524753152e45"},
+    {"path":"LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ASSET_CANDIDATE_DRAFT.json","sha256":"245ab993806b38e333d2ecbe34263cb33b84db74de10f9178c1e4ff101e91cbd"},
+    {"path":"LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_00B_SHA256_MANIFEST_V2.json","sha256":"9d4afed00d525a24b1e54709fa099ecc313dc4e862ae24e591d98df351deb6dc"},
+    {"path":"LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_01_METHODOLOGY_DRAFT_V4.json","sha256":"9cdae94afedf7b929e79725b668cf1f23e716b50e06fd244dbd48d4059bcaf75"},
+    {"path":"LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_01_REVIEW_CHECKPOINT_V1.json","sha256":"a6447748916c029d8161417cf0e0b683b45018409ff28ed04901b2386393531c"},
+    {"path":"LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_01_PROTOCOL_SEAL_V1.json","sha256":"83de11f7a66c7cde246aaf6047bedebba9d3c3236ba3cac8adc5e2c2822638f3"},
+    {"path":"LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_02_SOURCE_AUTHORITY_PREFLIGHT_V1.json","sha256":"a2898ad3d6537a19140cf11a55be160203782f51999e781bfa246f4e06b4d5e9"}
+  ],
+  "source_authority": {"provider": null, "status": "UNVERIFIED", "data_authorized": false},
+  "authorization": {
+    "provider": false,"calendar": false,"dataset": false,"definition_manifest": false,
+    "engine": false,"family_contract": false,"layer_2a": false,"layer_2b": false,
+    "bias": false,"production": false
+  },
+  "status": "DRAFT_GENERATED_NOT_SEALED",
+  "human_review_required": true,
+  "next_gate": "HUMAN_REVIEW_OF_ACTION_02_REMEDIATION_CONTRACT_V2",
+  "hard_stop": true
+}
