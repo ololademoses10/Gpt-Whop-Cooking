@@ -1,0 +1,20 @@
+{
+  "checkpoint_id": "BULL_RESEARCH_LINEAGE_06_ACTION_02_REMEDIATION_CONTRACT_V2_CHECKPOINT",
+  "status": "ACTION_02_CONTRACT_V2_PERSISTED_AWAITING_HUMAN_REVIEW",
+  "repository": "ololademoses10/Gpt-Whop-Cooking",
+  "branch": "research/lineage-06-persistence-staging-20261006",
+  "contract_path": "LETHAL_ENGINE/BULL_RESEARCH_LINEAGE_06/ACTION_02_REMEDIATION_CONTRACT_V2.json",
+  "contract_git_blob_sha": "14c957aaba6cd750c5257acf2071259b42517bbb",
+  "contract_sha256": "6fcf6247fd5856201777ffb086dcd962e262ade0c4dfe1fb2318a15261e0f858",
+  "historical_v1_recovered": false,
+  "historical_r2_recovered": false,
+  "authorized_for_data": false,
+  "authorized_for_research": false,
+  "authorized_for_production": false,
+  "market_data_acquired": false,
+  "production_touched": false,
+  "sealed_artifacts_mutated": false,
+  "human_review_required": true,
+  "next_gate": "HUMAN_REVIEW_OF_ACTION_02_REMEDIATION_CONTRACT_V2",
+  "hard_stop": true
+}
